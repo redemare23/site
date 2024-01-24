@@ -7,17 +7,18 @@ html, body, #home {
 }
 
 body {
-	background: url(../imagens/capa.png),
+	background: url(../images/),
 				url(../imagens/ruido.png),
-				linear-gradient(50deg,#47926d,#7aaf95);
+				linear-gradient(50deg,#c8e9d5,#7aaf95);
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
+	background-size: cover;
 }
 
 /* Barra de navegação*/
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: rgba(0,0,0,0.6);
+	/*background: rgba(255, 255, 255, 0.6);*/
 }
 
 .navbar-light .navbar-nav .nav-link {
