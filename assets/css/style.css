@@ -1,0 +1,31 @@
+/* #home {
+	background: #47916c;
+	color: white;
+} */
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+    text-align: justify;
+}
+
+.titulo {
+	text-align: start;
+}
+
+.footer {
+    background-color: #dffcee;
+    padding-top: 20px;
+    border-top: 1px solid #47916c;
+    margin-top: 20px;
+}
+
+
+/*  */
+
+#nav1 {
+    background: linear-gradient(to right, #47916c, #2c3e50);
+}

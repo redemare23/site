@@ -16,70 +16,19 @@
 
   <!-- Estilo customizado -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <style>
-    .mangue-img {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 20px;
-      height: 200px;
-      /* Ajuste a altura desejada */
-    }
 
-    .mangue-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease-in-out;
-      display: block;
-    }
-
-    .mangue-img .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      color: #fff;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .mangue-img h4,
-    .mangue-img p {
-      margin: 0;
-    }
-
-    .mangue-img:hover img {
-      transform: scale(1.1);
-    }
-
-    .mangue-img:hover .overlay {
-      opacity: 1;
-    }
-  </style>
-
-
-
-
-  <title>Rede Mare</title>
-  <link rel="icon" href="assets/img/favicon.ico">
+  <title>Rede MaRe</title>
+  <link rel="icon" href="assets/img/logo.png">
 </head>
 
-<body>
+<body style="padding-top: 70px;">
 
-  <header><!-- Início Cabeçalho -->
-    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #47916C;">
-      <div class="">
+  <header><!-- inicio Cabecalho -->
+    <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
 
         <a href="#" class="navbar-brand">
-          <img src="assets/img/logo1.png" width="142">
+          <img src="assets/img/logo.png" width="142">
         </a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
@@ -88,196 +37,172 @@
 
         <div class="collapse navbar-collapse" id="nav-principal">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="" class="nav-link text-light">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="projetosDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Projetos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                <a class="dropdown-item" href="projetos.html">Projetos</a>
+                <a class="dropdown-item" href="reunioes-atas.html">Reuniões e atas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="materiaisDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Materiais didáticos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="materiaisDropdown">
+                <a class="dropdown-item" href="protocolos.html">Protocolos</a>
+                <!-- <a class="dropdown-item" href="#">Material 2</a>
+                  <a class="dropdown-item" href="#">Material 3</a> -->
+              </div>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-light">Projetos</a>
+              <a class="nav-link" href="noticias.html">Notícias/divulgação</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-light">Membros</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link text-light">Materiais de Estudo</a>
+              <a class="nav-link" href="contatos.html">Contatos</a>
             </li>
           </ul>
+
         </div>
 
       </div>
     </nav>
-  </header><!--/Fim Cabeçalho -->
-
-
+  </header><!--/fim Cabecalho -->
+  <br><br>
   <section id="home"><!-- Início seção home -->
-    <div>
+    <div class="container">
       <div class="row">
-        <!-- Coluna para o Texto -->
-        <div class="col-md-6 d-flex">
+        <div class="col-md-6 d-flex"><!-- Textos da seção -->
           <div class="align-self-center">
-            <h1 class="display-4">Bem-vindos à Rede MaRe!</h1>
-            <p class="text-justify">
-              Uma rede de pesquisa dedicada à biodiversidade dos ecossistemas mangue e restinga do Brasil.
+            <h1 id="titulo" class="display-4 titulo"></h1>
+            <p id="conteudo-principal"> </p>
 
-            </p>
           </div>
-        </div><!-- /fim da coluna do texto -->
-
-        <!-- Coluna para as Imagens -->
-        <div class="col-md-6 d-sm-block">
-          <div class="mb-3">
-            <img src="assets/img/mapa1.jpg" class="img-fluid rounded">
-          </div>
-          <div class="mb-3">
-            <img src="assets/img/mapa2.jpg" class="img-fluid rounded">
-          </div>
-        </div><!-- /fim da coluna das imagens -->
+        </div><!--/fim textos da seção -->
+        <div class="col-md-6 d-none d-md-block">
+          <img src="assets/img/boasVindas1.jpg" alt="Imagem 1" class="img-thumbnail">
+        </div>
       </div>
     </div>
   </section><!--/fim seção home -->
-
-
-
-  <section  >
-    <div class="">
+  <section class="caixa"><!--/Início seção saiba -->
+    <div class="container">
       <div class="row">
         <div class="col-md-6 d-flex">
           <div class="align-self-center">
-            <h2>Saiba mais sobre o bioma Mangue</h2>
-            <p class="text-justify">
-              O mangue é um ecossistema costeiro encontrado em regiões de transição entre o ambiente terrestre e
-              marinho, como áreas que sofrem influência das marés. No Brasil, ele está presente ao longo de toda a
-              costa, especialmente nas regiões Norte do país. Os manguezais são ecossistemas ricos em biodiversidade,
-              abrigando uma grande variedade de espécies de plantas, animais e micro-organismos adaptados às condições
-              salinas e de inundação periódica. Além disso, esses biomas desempenham um papel crucial na proteção
-              costeira e como berçário para diversas espécies marinhas, sendo consideradas áreas de grande importância
-              ecológica e socioeconômica.
-              Nossa pesquisa se concentra em diferentes áreas desse bioma, incluindo o bosque da baía do sudeste em
-              Fernando de Noronha (PE), a Área de Proteção Ambiental (APA) Mamanguape e a flora da restinga de Cabedelo,
-              a foz do Rio Paraíba e a zona urbana manguezal de Cabo de Santo Agostinho. Estudar essas regiões nos
-              permitirá entender melhor a diversidade e a importância dos manguezais brasileiros.
+            <h2 id="titulo-mapa1" class="titulo"></h2>
+            <p id="conteudo-mapa1">
             </p>
+            <!-- <a href="" class="btn btn-primary">Veja mais</a> -->
           </div>
         </div>
-
         <div class="col-md-6">
-          <div class="row">
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/mangue1.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Bosque da baía de fernando de noronha</h4>
-                  <p>Floresta nacional em Pernambuco</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/mangue2.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Título da Imagem</h4>
-                  <p>Legenda da imagem 2</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/mangue3.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Título da Imagem</h4>
-                  <p>Legenda da imagem 3</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/mangue4.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Título da Imagem</h4>
-                  <p>Legenda da imagem 4</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <img src="assets/img/mapa1.jpg" class="img-fluid">
+        </div>
       </div>
     </div>
-  </section>
+  </section><!--/FIM seção saiba -->
 
-
-  <section >
-    <div class="">
+  <section class="caixa"><!--/Início seção juros -->
+    <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/restinga.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Parque estadual de Itapeva</h4>
-                  <p>Prefeitura de Torres</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/restinga2.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Tramandaí</h4>
-                  <p>Dunas aréa branca</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/restinga3.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Juan Andrés Anza</h4>
-                  <p>Parque Nacional da Lagoa do Peixe</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 mb-3">
-              <div class="mangue-img">
-                <img src="assets/img/restinga4.png" class="img-fluid">
-                <div class="overlay">
-                  <h4>Título da Imagem</h4>
-                  <p>Legenda da imagem 4</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
         <div class="col-md-6 d-flex">
           <div class="align-self-center">
-            <h2>Saiba mais sobre o bioma Restinga</h2>
-            <p class="text-justify">
-              A restinga é um ecossistema costeiro encontrado ao longo da costa brasileira, incluindo o litoral do Rio
-              Grande do Sul. Caracteriza-se por vegetação adaptada a condições adversas, como solos pobres e influência
-              das marés. No Rio Grande do Sul, a restinga abriga uma diversidade de plantas e animais, servindo como
-              habitat para espécies costeiras e marítimas. Enfrenta desafios devido à urbanização e turismo, destacando
-              a importância da preservação para manter sua biodiversidade e serviços ecossistêmicos.
-              Os lugares estudados incluem o Parque Estadual de Itapeva, a zona urbana de Imbé e Tramandaí, o Parque
-              Nacional da Lagoa do Peixe e a zona urbana da Praia do Cassino. Estas áreas representam diferentes
-              ambientes dentro do bioma da restinga, permitindo estudos abrangentes sobre sua biodiversidade e ecologia.
+            <h2 id="titulo-mapa2" class="titulo"></h2>
+            <p id="conteudo-mapa2">
 
             </p>
+            <!-- <a href="" class="btn btn-primary">Veja mais</a> -->
           </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/mapa2.jpg" class="img-fluid">
         </div>
       </div>
     </div>
-  </section>
-  <footer class="mt-4 mb-4">
-    <div class="">
+  </section><!--/FIM seção juros -->
+
+  <section class="caixa"><!--/Início seção recursos -->
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex">
+          <div class="align-self-center">
+            <h2 id="Mangue-titulo" class="biome-title titulo"></h2>
+            <p id="Mangue-conteudo" class="content"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+              <img src="assets/img/mangue1.png" class="img-fluid">
+              <h4>Título Mangue 1</h4>
+              <p>Descrição Mangue 1</p>
+          </div>
+          <div class="col-md-4">
+              <img src="assets/img/mangue2.png" class="img-fluid">
+              <h4>Título Mangue 2</h4>
+              <p>Descrição Mangue 2</p>
+              </p>
+          </div>
+          <div class="col-md-4">
+              <img src="assets/img/mangue3.png" class="img-fluid">
+              <h4>Título Mangue 3</h4>
+              <p>Descrição Mangue 3</p>
+          </div>
+      </div>
+
+      </div>
+
+    </div>
+  </section><!--/FIM seção recursos -->
+
+  <section class="caixa"><!--/Início seção recursos -->
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex">
+          <div class="align-self-center">
+            <h2 id="Restiga-titulo" class="biome-title titulo"></h2>
+            <p id="Restiga-conteudo" class="content"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+              <img src="assets/img/restinga1.png" class="img-fluid">
+              <h4>Título Restiga 1</h4>
+              <p>Descrição Restiga 1</p>
+          </div>
+          <div class="col-md-4">
+              <img src="assets/img/restinga2.png" class="img-fluid">
+              <h4>Título Restiga 2</h4>
+              <p>Descrição Restiga 2</p>
+              </p>
+          </div>
+          <div class="col-md-4">
+              <img src="assets/img/restinga3.png" class="img-fluid">
+              <h4>Título Restiga 3</h4>
+              <p>Descrição Restiga 3</p>
+          </div>
+      </div>
+
+      </div>
+
+    </div>
+  </section><!--/FIM seção recursos -->
+
+  <footer class="footer mt-4">
+    <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p>
-            <a href="">Link1</a>
-            <a href="">Link2</a>
-            <a href="">Link3</a>
-            <a href="">Link4</a>
-          </p>
+          <!-- <ul class="footer-links">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul> -->
         </div>
         <div class="col-md-4 d-flex justify-content-end">
           <a href="" class="btn btn-outline-dark">
@@ -286,20 +211,22 @@
           <a href="" class="btn btn-outline-dark ml-2">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/rede.mare/" class="btn btn-outline-dark ml-2">
+          <a href="" class="btn btn-outline-dark ml-2">
             <i class="fab fa-instagram"></i>
           </a>
           <a href="" class="btn btn-outline-dark ml-2">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Rede MaRe. Todos os direitos reservados.</p>
+        </div>
       </div>
-    </div>
   </footer>
-
 
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
