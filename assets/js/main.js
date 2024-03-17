@@ -63,4 +63,15 @@ document.addEventListener("DOMContentLoaded", async function () {
       updateElement('pa6-conteudo', items[10]?.conteudo || '');
     }
   });
+
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    var windowHeight = $(this).height();
+    $('.animate-slide').each(function() {
+      var position = $(this).offset().top;
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('active');
+      }
+    });
+  });
   
