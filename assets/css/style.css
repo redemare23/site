@@ -113,3 +113,34 @@
 .image-container:hover .image-caption {
     transform: translateY(0);
 }
+
+
+/* Adicione estilos comuns para os títulos dos accordion-items */
+.accordion-item {
+    padding: 10px 15px; /* Adicione padding para espaçamento interno */
+    margin: 0; /* Remova margens para garantir consistência */
+    color: #000; /* Defina a cor do texto para preto */
+    font-size: 18px; /* Defina o tamanho do texto */
+    font-weight: bold; /* Defina a espessura da fonte */
+    text-align: center; /* Centralize o texto */
+    cursor: pointer; /* Altere o cursor para indicar que é clicável */
+}
+
+/* Adicione as cores específicas para cada título */
+#pa1-titulo,
+#pa2-titulo,
+#pa3-titulo {
+    background-color: #D5FCDB;
+}
+
+#pa4-titulo {
+    background-color: #BDE5FF;
+}
+
+#pa5-titulo {
+    background-color: #F4B5B6;
+}
+
+#pa6-titulo {
+    background-color: #F3EEC6;
+}

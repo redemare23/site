@@ -2,227 +2,274 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Estilo customizado -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Rede MaRe</title>
-    <link rel="icon" href="assets/img/logo.png">
+  <title>Rede MaRe</title>
+  <link rel="icon" href="assets/img/logo.png">
 </head>
 
-<body>
+<body style="padding-top: 100px;">
+<br><br>
+  <header><!-- inicio Cabecalho -->
+    <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
 
-    <header><!-- inicio Cabecalho -->
-        <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="assets/img/logo.png" width="142">
+        </a>
 
-                <a href="#" class="navbar-brand">
-                    <img src="assets/img/logo.png" width="142">
-                </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="nav-principal">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="projetosDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Projetos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="projetosDropdown">
-                                <a class="dropdown-item" href="projetos.html">Projetos</a>
-                                <a class="dropdown-item" href="reunioes-atas.html">Reuniões e atas</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="materiaisDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Materiais didáticos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="materiaisDropdown">
-                                <a class="dropdown-item" href="protocolos.html">Protocolos</a>
-                                <!-- <a class="dropdown-item" href="#">Material 2</a>
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="projetosDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Projetos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                <a class="dropdown-item" href="projetos.html">Projetos</a>
+                <a class="dropdown-item" href="reunioes-atas.html">Reuniões e atas</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="materiaisDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Materiais didáticos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="materiaisDropdown">
+                <a class="dropdown-item" href="protocolos.html">Protocolos</a>
+                <!-- <a class="dropdown-item" href="#">Material 2</a>
                   <a class="dropdown-item" href="#">Material 3</a> -->
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="noticias.html">Notícias/divulgação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contatos.html">Contatos</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
-    </header><!--/fim Cabecalho -->
-    <br><br>
-    <section id="home"><!-- Início seção home -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex"><!-- Textos da seção -->
-                    <div class="align-self-center">
-                        <h1 id="titulo" class="display-4"></h1>
-                        <p id="conteudo-principal"> </p>
-
-                    </div>
-                </div><!--/fim textos da seção -->
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="assets/img/boasVindas1.jpg" alt="Imagem 1" class="img-thumbnail">
-                </div>
-            </div>
-        </div>
-    </section><!--/fim seção home -->
-    <section class="caixa"><!--/Início seção saiba -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/img/mapa2.jpg" class="img-fluid">
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="align-self-center">
-                        <h2 id="titulo-mapa1"></h2>
-                        <p id="conteudo-mapa1">
-                        </p>
-                        <!-- <a href="" class="btn btn-primary">Veja mais</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/FIM seção saiba -->
-
-    <section class="caixa"><!--/Início seção juros -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/img/mapa2.jpg" class="img-fluid">
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="align-self-center">
-                        <h2 id="titulo-mapa2"></h2>
-                        <p id="conteudo-mapa2">
-
-                        </p>
-                        <!-- <a href="" class="btn btn-primary">Veja mais</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/FIM seção juros -->
-
-    <section class="caixa"><!--/Início seção recursos -->
-        <div class="container">
-            <div class="row">
-                <h2 id="Mangue-titulo" class="biome-title"></h2>
-                <p id="Mangue-conteudo" class="content"></p>
-                <div class="col">
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="assets/img/mangue1.png" class="img-fluid">
-                            <h4>Título Mangue 1</h4>
-                            <p>Descrição Mangue 1</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/img/mangue2.png" class="img-fluid">
-                            <h4>Título Mangue 2</h4>
-                            <p>Descrição Mangue 2</p>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/img/mangue3.png" class="img-fluid">
-                            <h4>Título Mangue 3</h4>
-                            <p>Descrição Mangue 3</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Notícias/divulgação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatos.html">Contatos</a>
+            </li>
+          </ul>
 
         </div>
-    </section><!--/FIM seção recursos -->
 
-    <section class="caixa"><!--/Início seção recursos -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/img/restinga1.png" class="img-fluid">
-                    <h4>Título Restinga 1</h4>
-                    <p>Descrição Restinga 1</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/restinga2.png" class="img-fluid">
-                    <h4>Título Restinga 2</h4>
-                    <p>Descrição Restinga 2</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/restinga3.png" class="img-fluid">
-                    <h4>Título Restinga 3</h4>
-                    <p>Descrição Restinga 3</p>
-                </div>
+      </div>
+    </nav>
+  </header><!--/fim Cabecalho -->
+
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Coluna para a Imagem -->
+      <div class="col-md-9">
+        <img id="projetosImage" src="assets/img/projetos.png" alt="Imagem 1" class="img-fluid">
+      </div>
+
+      <!-- Coluna para o Accordion -->
+      <div class="col-md-3">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 1 do Accordion -->
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="flush-headingTwo">
+              <button id="pa1-titulo" class="accordion-button pa123" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+
+              </button>
+            </h5>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+              <div id="pa1-conteudo" class="accordion-body">
+
+              </div>
             </div>
+          </div>
         </div>
-    </section><!--/FIM seção recursos -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 2 do Accordion -->
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="flush-headingTwo">
+              <button id="pa2-titulo" class="accordion-button pa123" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 
-    <footer class="footer mt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <!-- <ul class="footer-links">
+              </button>
+            </h5>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+              <div id="pa2-conteudo" class="accordion-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 3 do Accordion -->
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="flush-headingTwo">
+              <button id="pa3-titulo" class="accordion-button pa123" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+
+              </button>
+            </h5>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+              <div id="pa3-conteudo" class="accordion-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+
+          <!-- Item 4 do Accordion -->
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="flush-headingTwo">
+              <button id="pa4-titulo" class="accordion-button pa4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+
+              </button>
+            </h5>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+              <div id="pa4-conteudo" class="accordion-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 2 do Accordion -->
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="flush-headingTwo">
+              <button id="pa5-titulo" class="accordion-button pa5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+
+              </button>
+            </h5>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+              <div id="pa5-conteudo" class="accordion-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 3 do Accordion -->
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="flush-headingTwo">
+              <button id="pa6-titulo" class="accordion-button pa6" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+
+              </button>
+            </h5>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+              <div id="pa6-conteudo" class="accordion-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- <ul class="footer-links">
                 <li><a href="#">Link1</a></li>
                 <li><a href="#">Link2</a></li>
                 <li><a href="#">Link3</a></li>
                 <li><a href="#">Link4</a></li>
             </ul> -->
-                </div>
-                <div class="col-md-4 d-flex justify-content-end">
-                    <a href="" class="btn btn-outline-dark">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="" class="btn btn-outline-dark ml-2">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="btn btn-outline-dark ml-2">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="btn btn-outline-dark ml-2">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-                <div class="col-md-12 text-center">
-                    <p>&copy; 2024 Rede MaRe. Todos os direitos reservados.</p>
-                </div>
-            </div>
-    </footer>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end">
+          <a href="" class="btn btn-outline-dark">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="" class="btn btn-outline-dark ml-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="btn btn-outline-dark ml-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="btn btn-outline-dark ml-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Rede MaRe. Todos os direitos reservados.</p>
+        </div>
+      </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var accordions = document.querySelectorAll('.accordion-item');
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="assets/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        accordions.forEach(function (accordion) {
+            var button = accordion.querySelector('.accordion-button');
+            var imageColumn = document.querySelector('.col-md-9');
+            var accordionColumn = document.querySelector('.col-md-3');
+
+            button.addEventListener('click', function () {
+                accordions.forEach(function (acc) {
+                    if (acc !== accordion) {
+                        acc.classList.remove('active');
+                        acc.querySelector('.accordion-collapse').style.maxHeight = '0';
+                    }
+                });
+
+                accordion.classList.toggle('active');
+                var collapse = accordion.querySelector('.accordion-collapse');
+                if (accordion.classList.contains('active')) {
+                    collapse.style.maxHeight = collapse.scrollHeight + 'px';
+                    imageColumn.classList.remove('col-md-9');
+                    imageColumn.classList.add('col-md-3');
+                    accordionColumn.classList.remove('col-md-3');
+                    accordionColumn.classList.add('col-md-9');
+                } else {
+                    collapse.style.maxHeight = '0';
+                    imageColumn.classList.remove('col-md-3');
+                    imageColumn.classList.add('col-md-9');
+                    accordionColumn.classList.remove('col-md-9');
+                    accordionColumn.classList.add('col-md-3');
+                }
+            });
+        });
+    });
+</script>
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <!-- Meta tags Obrigatórias -->
@@ -14,85 +14,65 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Estilo customizado -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
 
-  <title>Rede MaRe - Projetos</title>
+  </style>
+
+  <title>Rede MaRe</title>
   <link rel="icon" href="assets/img/logo.png">
 </head>
 
-<body>
-    <!-- Navbar1 -->
-    <nav id="nav1" class="navbar navbar-expand-lg navbar-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="">Banco de imagens</i></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Diário de coletas</a>
-              </li>
-              <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Link3</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Link4</a>
-              </li> -->
-          </ul>
-      </div>
-  </nav>
-
-  <!-- Navbar2 -->
-  <nav id="nav2" class="navbar navbar-expand-lg navbar-dark">
-      <a href="#" class="navbar-brand">
+<body style="padding-top: 100px;">
+  <br><br>
+  <header><!-- inicio Cabecalho -->
+    <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
           <img src="assets/img/logo.png" width="142">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
           <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="projetosDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Projetos
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="projetosDropdown">
-                      <a class="dropdown-item" href="projetos.html">Projetos</a>
-                      <a class="dropdown-item" href="reunioes-atas.html">Reuniões e atas</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="materiaisDropdown"
-                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Materiais didáticos
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="materiaisDropdown">
-                      <a class="dropdown-item" href="protocolos.html">Protocolos</a>
-                      <!-- <a class="dropdown-item" href="#">Material 2</a>
-                  <a class="dropdown-item" href="#">Material 3</a> -->
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="noticias.html">Notícias/divulgação</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contatos.html">Contatos</a>
-              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="projetosDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Projetos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                <a class="dropdown-item" href="projetos.html">Projetos</a>
+                <a class="dropdown-item" href="reunioes-atas.html">Reuniões e atas</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="materiaisDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Materiais didáticos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="materiaisDropdown">
+                <a class="dropdown-item" href="protocolos.html">Protocolos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Notícias/divulgação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatos.html">Contatos</a>
+            </li>
           </ul>
+        </div>
       </div>
-  </nav>
-
-
+    </nav>
+  </header><!--/fim Cabecalho -->
 
   <div class="container">
     <div class="row">
@@ -106,186 +86,125 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <!-- Item 1 do Accordion -->
           <div class="accordion-item">
-            <h5 class="accordion-header" id="flush-headingTwo">
+            <h5 class="accordion-header" id="flush-headingOne">
               <button id="pa1-titulo" class="accordion-button pa123" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
+                data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                Item #1
               </button>
             </h5>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
               <div id="pa1-conteudo" class="accordion-body">
-
+                Conteúdo do Item #1
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
           <!-- Item 2 do Accordion -->
           <div class="accordion-item">
             <h5 class="accordion-header" id="flush-headingTwo">
               <button id="pa2-titulo" class="accordion-button pa123" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
+                Item #2
               </button>
             </h5>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
               <div id="pa2-conteudo" class="accordion-body">
-
+                Conteúdo do Item #2
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
           <!-- Item 3 do Accordion -->
           <div class="accordion-item">
-            <h5 class="accordion-header" id="flush-headingTwo">
+            <h5 class="accordion-header" id="flush-headingThree">
               <button id="pa3-titulo" class="accordion-button pa123" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Item #3
               </button>
             </h5>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
               <div id="pa3-conteudo" class="accordion-body">
-
+                Conteúdo do Item #3
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-
-
           <!-- Item 4 do Accordion -->
           <div class="accordion-item">
-            <h5 class="accordion-header" id="flush-headingTwo">
+            <h5 class="accordion-header" id="flush-headingFour">
               <button id="pa4-titulo" class="accordion-button pa4" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Item #4
               </button>
             </h5>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
               <div id="pa4-conteudo" class="accordion-body">
-
+                Conteúdo do Item #4
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <!-- Item 2 do Accordion -->
+          <!-- Item 5 do Accordion -->
           <div class="accordion-item">
-            <h5 class="accordion-header" id="flush-headingTwo">
+            <h5 class="accordion-header" id="flush-headingFive">
               <button id="pa5-titulo" class="accordion-button pa5" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Item #5
               </button>
             </h5>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
               <div id="pa5-conteudo" class="accordion-body">
-
+                Conteúdo do Item #5
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <!-- Item 3 do Accordion -->
+          <!-- Item 6 do Accordion -->
           <div class="accordion-item">
-            <h5 class="accordion-header" id="flush-headingTwo">
+            <h5 class="accordion-header" id="flush-headingSix">
               <button id="pa6-titulo" class="accordion-button pa6" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Item #6
               </button>
             </h5>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample">
               <div id="pa6-conteudo" class="accordion-body">
-
+                Conteúdo do Item #6
               </div>
             </div>
           </div>
         </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+      </div>
+    </div>
+  </div>
 
+  <footer class="footer mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4 d-flex justify-content-end">
+          <a href="" class="btn btn-outline-dark">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="" class="btn btn-outline-dark ml-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="btn btn-outline-dark ml-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="btn btn-outline-dark ml-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Rede MaRe. Todos os direitos reservados.</p>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
-
-  <!-- Adicione os links para o Bootstrap JS e o arquivo JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var accordions = document.querySelectorAll('.accordion-item');
-
-        accordions.forEach(function (accordion) {
-            var button = accordion.querySelector('.accordion-button');
-            var imageColumn = document.querySelector('.col-md-9');
-            var accordionColumn = document.querySelector('.col-md-3');
-
-            button.addEventListener('click', function () {
-                accordions.forEach(function (acc) {
-                    if (acc !== accordion) {
-                        acc.classList.remove('active');
-                        acc.querySelector('.accordion-collapse').style.maxHeight = '0';
-                    }
-                });
-
-                accordion.classList.toggle('active');
-                var collapse = accordion.querySelector('.accordion-collapse');
-                if (accordion.classList.contains('active')) {
-                    collapse.style.maxHeight = collapse.scrollHeight + 'px';
-                    imageColumn.classList.remove('col-md-9');
-                    imageColumn.classList.add('col-md-3');
-                    accordionColumn.classList.remove('col-md-3');
-                    accordionColumn.classList.add('col-md-9');
-                } else {
-                    collapse.style.maxHeight = '0';
-                    imageColumn.classList.remove('col-md-3');
-                    imageColumn.classList.add('col-md-9');
-                    accordionColumn.classList.remove('col-md-9');
-                    accordionColumn.classList.add('col-md-3');
-                }
-            });
-        });
-    });
-</script>
-  <!-- Footer -->
-  <div class="footer">
-    <div class="row">
-      <div class="col-md-8">
-        <!-- <ul class="footer-links">
-                  <li><a href="#">Link1</a></li>
-                  <li><a href="#">Link2</a></li>
-                  <li><a href="#">Link3</a></li>
-                  <li><a href="#">Link4</a></li>
-              </ul> -->
-      </div>
-      <div class="col-md-4 d-flex justify-content-end">
-        <a href="" class="btn btn-outline-dark">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="" class="btn btn-outline-dark ml-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="btn btn-outline-dark ml-2">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="btn btn-outline-dark ml-2">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>&copy; 2024 Rede MaRe. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </div>
+  </footer>
+  <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/principal.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -295,6 +214,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <script>
+    // Adicione o script abaixo para controlar o comportamento dos accordion-items
+    $(document).ready(function () {
+      $('.accordion-button').click(function () {
+        // Fecha todos os outros accordion-items
+        $('.accordion-collapse').collapse('hide');
+        // Abre ou fecha o item clicado
+        $(this).closest('.accordion-item').find('.accordion-collapse').collapse('toggle');
+      });
+    });
+  </script>
 </body>
 
 </html>
