@@ -116,14 +116,22 @@
 
 
 /* Adicione estilos comuns para os títulos dos accordion-items */
-.accordion-item {
-    padding: 10px 15px; /* Adicione padding para espaçamento interno */
+.accordion-title {
+    padding: 15px; /* Adicione padding para espaçamento interno */
     margin: 0; /* Remova margens para garantir consistência */
     color: #000; /* Defina a cor do texto para preto */
     font-size: 18px; /* Defina o tamanho do texto */
-    font-weight: bold; /* Defina a espessura da fonte */
     text-align: center; /* Centralize o texto */
     cursor: pointer; /* Altere o cursor para indicar que é clicável */
+}
+
+/* Estilos para o conteúdo dos accordion-items */
+.accordion-content {
+    padding: 15px; /* Adicione padding para espaçamento interno */
+    margin: 0; /* Remova margens para garantir consistência */
+    color: #000; /* Defina a cor do texto para preto */
+    font-size: 16px; /* Defina o tamanho do texto */
+    text-align: justify; /* Justifique o texto */
 }
 
 /* Adicione as cores específicas para cada título */
