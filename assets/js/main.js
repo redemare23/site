@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const data = await response.json();
   
       // Manipular e exibir os dados na página HTML
-      console.log(data);
+      // console.log(data);
       displayData(data.items);
     } catch (error) {
       console.error('Erro durante a solicitação:', error);
@@ -63,15 +63,5 @@ document.addEventListener("DOMContentLoaded", async function () {
       updateElement('pa6-conteudo', items[10]?.conteudo || '');
     }
   });
-
-  $(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
-    var windowHeight = $(this).height();
-    $('.animate-slide').each(function() {
-      var position = $(this).offset().top;
-      if (position < scrollTop + windowHeight) {
-        $(this).addClass('active');
-      }
-    });
-  });
+;
   
