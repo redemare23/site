@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const data = await response.json();
   
       // Manipular e exibir os dados na página HTML
-      // console.log(data);
+      console.log(data);
       displayData(data.items);
     } catch (error) {
       console.error('Erro durante a solicitação:', error);
@@ -28,10 +28,11 @@ document.addEventListener("DOMContentLoaded", async function () {
           element.innerHTML = content;
         }
       };
-  
+      
       updateElement('titulo', items[0]?.titulo || '');
       updateElement('conteudo-principal', items[0]?.conteudo || '');
-  
+      updateElement('legenda-principal', items[0]?.legenda_imagem || '');
+
       updateElement('titulo-mapa1', items[1]?.titulo || '');
       updateElement('conteudo-mapa1', items[1]?.conteudo || '');
   
@@ -40,10 +41,16 @@ document.addEventListener("DOMContentLoaded", async function () {
   
       updateElement('Mangue-titulo', items[3]?.titulo || '');
       updateElement('Mangue-conteudo', items[3]?.conteudo || '');
-  
+      updateElement('legenda-mangue1', items[11]?.legenda_imagem || '');
+      updateElement('legenda-mangue2', items[12]?.legenda_imagem || '');
+      updateElement('legenda-mangue3', items[13]?.legenda_imagem || '');
+
       updateElement('Restiga-titulo', items[4]?.titulo || '');
       updateElement('Restiga-conteudo', items[4]?.conteudo || '');
-  
+      updateElement('legenda-restinga1', items[14]?.legenda_imagem || '');
+      updateElement('legenda-restinga2', items[15]?.legenda_imagem || '');
+      updateElement('legenda-restinga3', items[16]?.legenda_imagem || '');
+
       updateElement('pa1-titulo', items[5]?.titulo || '');
       updateElement('pa1-conteudo', items[5]?.conteudo || '');
   
